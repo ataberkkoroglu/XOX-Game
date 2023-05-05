@@ -230,45 +230,7 @@ class Window(QMainWindow):
             self.congratulations()
         
         else:
-            self.counter=0
-            self.button.setText("1")
-            self.button2.setText("2")
-            self.button3.setText("3")
-            self.button4.setText("4")
-            self.button5.setText("5")
-            self.button6.setText("6")
-            self.button7.setText("7")
-            self.button8.setText("8")
-            self.button9.setText("9")
-        
-            self.button.setStyleSheet("background: white")
-            self.button2.setStyleSheet("background: white")
-            self.button3.setStyleSheet("background: white")
-            self.button4.setStyleSheet("background: white")
-            self.button5.setStyleSheet("background: white")
-            self.button6.setStyleSheet("background: white")
-            self.button7.setStyleSheet("background: white")
-            self.button8.setStyleSheet("background: white")
-            self.button9.setStyleSheet("background: white")
-            
-            self.gamer1_1=False
-            self.gamer2_1=False
-            self.gamer1_2=False
-            self.gamer2_2=False
-            self.gamer1_3=False
-            self.gamer2_3=False
-            self.gamer1_4=False
-            self.gamer2_4=False
-            self.gamer1_5=False
-            self.gamer2_5=False
-            self.gamer1_6=False
-            self.gamer2_6=False
-            self.gamer1_7=False
-            self.gamer2_7=False
-            self.gamer1_8=False
-            self.gamer2_8=False
-            self.gamer1_9=False
-            self.gamer2_9=False
+            self.Clear()
             
       elif sender.text() =="1":
             
@@ -388,45 +350,8 @@ class Window(QMainWindow):
               self.gamer2_9=True
             
       elif sender.text()=="Clear":
-            self.counter=0
-            self.button.setText("1")
-            self.button2.setText("2")
-            self.button3.setText("3")
-            self.button4.setText("4")
-            self.button5.setText("5")
-            self.button6.setText("6")
-            self.button7.setText("7")
-            self.button8.setText("8")
-            self.button9.setText("9")
-        
-            self.button.setStyleSheet("background: white")
-            self.button2.setStyleSheet("background: white")
-            self.button3.setStyleSheet("background: white")
-            self.button4.setStyleSheet("background: white")
-            self.button5.setStyleSheet("background: white")
-            self.button6.setStyleSheet("background: white")
-            self.button7.setStyleSheet("background: white")
-            self.button8.setStyleSheet("background: white")
-            self.button9.setStyleSheet("background: white")
-            
-            self.gamer1_1=False
-            self.gamer2_1=False
-            self.gamer1_2=False
-            self.gamer2_2=False
-            self.gamer1_3=False
-            self.gamer2_3=False
-            self.gamer1_4=False
-            self.gamer2_4=False
-            self.gamer1_5=False
-            self.gamer2_5=False
-            self.gamer1_6=False
-            self.gamer2_6=False
-            self.gamer1_7=False
-            self.gamer2_7=False
-            self.gamer1_8=False
-            self.gamer2_8=False
-            self.gamer1_9=False
-            self.gamer2_9=False
+           self.Clear()
+           
       elif sender.text()=="Reset Score":
           self.gamer1_point=0
           self.gamer2_point=0
@@ -495,7 +420,48 @@ class Window(QMainWindow):
         self.gamer2_main.setText(f"Player2's Point: {self.gamer2_point}") 
         self.window1.setMaximumSize(200,200)
         
-        self.window1.show()    
+        self.window1.show()  
+        
+    def Clear(self):
+            self.counter=0
+            self.button.setText("1")
+            self.button2.setText("2")
+            self.button3.setText("3")
+            self.button4.setText("4")
+            self.button5.setText("5")
+            self.button6.setText("6")
+            self.button7.setText("7")
+            self.button8.setText("8")
+            self.button9.setText("9")
+        
+            self.button.setStyleSheet("background: white")
+            self.button2.setStyleSheet("background: white")
+            self.button3.setStyleSheet("background: white")
+            self.button4.setStyleSheet("background: white")
+            self.button5.setStyleSheet("background: white")
+            self.button6.setStyleSheet("background: white")
+            self.button7.setStyleSheet("background: white")
+            self.button8.setStyleSheet("background: white")
+            self.button9.setStyleSheet("background: white")
+            
+            self.gamer1_1=False
+            self.gamer2_1=False
+            self.gamer1_2=False
+            self.gamer2_2=False
+            self.gamer1_3=False
+            self.gamer2_3=False
+            self.gamer1_4=False
+            self.gamer2_4=False
+            self.gamer1_5=False
+            self.gamer2_5=False
+            self.gamer1_6=False
+            self.gamer2_6=False
+            self.gamer1_7=False
+            self.gamer2_7=False
+            self.gamer1_8=False
+            self.gamer2_8=False
+            self.gamer1_9=False
+            self.gamer2_9=False    
        
            
 app=QApplication(sys.argv)
